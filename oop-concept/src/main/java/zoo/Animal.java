@@ -7,6 +7,8 @@ public class Animal {
     private String gender;
     private String name;
 
+    //Method Overloading - different parameters and return types
+    //Method overriding  - same method signature and return dynamic
     //Constructors
 
     public Animal() {
@@ -18,7 +20,7 @@ public class Animal {
     }
     //Getters and Setters
 
-    public int getAge(String name) {
+    public int getAge() {
         return age;
     }
 
@@ -42,18 +44,20 @@ public class Animal {
         this.name = name;
     }
 
+
     //Methods
+
     public boolean isMammal() {
         return true;
     }
     public String swim () {
-        return "I am swiming";
+        return "I am swimming in the Super which is the Animal class...";
     }
     public String run() {
-        return "Iam runing man hear me rooar";
+        return "I am running man hear me roar!!!";
     }
-    //To String
 
+    //To String
 
     @Override
     public String toString() {
@@ -64,8 +68,3 @@ public class Animal {
                 '}';
     }
 }
-
-
-
-
-
