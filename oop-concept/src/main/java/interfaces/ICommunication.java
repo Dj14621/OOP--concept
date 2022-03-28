@@ -1,2 +1,7 @@
-package interfaces;public interface ICommunication {
+package interfaces;
+
+public interface ICommunication {
+    String speak();
+
+    //Default Methods
 }

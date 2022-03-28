@@ -1,16 +1,27 @@
+//Developer Comments
+/*
+ * This is where you would put your comments.
+ * */
+
+//Package
 package zoo;
 
-public class Animal {
-    //public static void main (String []args) {
-// Fields
+//Imports
+import interfaces.ICommunication;
+
+//TODO Discuss: Talk about using TODOS
+
+//Class Declaration
+public class Animal implements ICommunication {
+    //Fields
     private int age;
     private String gender;
     private String name;
 
-    //Method Overloading - different parameters and return types
-    //Method overriding  - same method signature and return dynamic
-    //Constructors
+    //Method Overloading - Different parameters and return type
+    //Method Overriding - Same method signature different body
 
+    //Constructors
     public Animal() {
     }
     public Animal(int age, String gender, String name) {
@@ -18,10 +29,13 @@ public class Animal {
         this.gender = gender;
         this.name = name;
     }
-    //Getters and Setters
 
+    //Getters and Setters
     public int getAge() {
         return age;
+    }
+    public String getAge(String name) {
+        return "Your name is: " + name + " And your age is: " + getAge();
     }
 
     public void setAge(int age) {
@@ -44,21 +58,19 @@ public class Animal {
         this.name = name;
     }
 
-
     //Methods
-
     public boolean isMammal() {
         return true;
     }
-    public String swim () {
-        return "I am swimming in the Super which is the Animal class...";
+    public String swim() {
+        return "I am swimming in Super which is the Animal class...";
     }
     public String run() {
         return "I am running man hear me roar!!!";
     }
 
+    //TODO Remove: We will be using inheritance so we will not need this.
     //To String
-
     @Override
     public String toString() {
         return "Animal{" +
@@ -67,4 +79,10 @@ public class Animal {
                 ", name='" + name + '\'' +
                 '}';
     }
+
+    @Override
+    public String speak() {
+        return "I am speaking";
+    }
+
 }
