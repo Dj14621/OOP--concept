@@ -2,7 +2,7 @@ import zoo.Animal;
 import zoo.Duck;
 import zoo.Fish;
 
-public class Main {
+public class AnimalMain {
     public static void main(String[] args) {
 
 
