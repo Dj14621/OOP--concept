@@ -30,15 +30,15 @@ public class ZooMain {
     while (true) {
         switch ( pickAnimal()){
             case 1:
-                System.out.println("You are viewing the Duck");
+                System.out.println("You are viewing the Duck!");
                 viewDuck();
                 break;
             case 2:
-                System.out.println(" You are viewing the Fish");
+                System.out.println(" You are viewing the Fish!");
                 viewFish();
                 break;
             case 3:
-                System.out.println("you are viewing the Lion");
+                System.out.println("you are viewing the Lion!");
                 viewLion();
                 break;
             case 4:
